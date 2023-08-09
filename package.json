@@ -1,0 +1,41 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.5.8",
+    "@react-navigation/material-top-tabs": "^6.6.3",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.13",
+    "@react-navigation/stack": "^6.3.17",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "expo": "~49.0.5",
+    "expo-status-bar": "~1.6.0",
+    "native-base": "^3.4.28",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.72.3",
+    "react-native-numeric-input": "^1.9.1",
+    "react-native-pager-view": "^6.2.0",
+    "react-native-paper": "^5.10.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-svg": "13.9.0",
+    "react-native-swipe-list-view": "^3.2.9",
+    "react-native-tab-view": "^3.5.2",
+    "react-native-web": "^0.19.7",
+    "react-redux": "^8.1.2",
+    "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

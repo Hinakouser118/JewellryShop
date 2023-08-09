@@ -1,0 +1,64 @@
+{
+  "user": [
+    {
+      "name": "abdullah",
+      "age": "25",
+      "email": "abuu@test.com",
+      "id": 1
+    },
+    {
+      "name": "kaif",
+      "age": "21",
+      "email": "abo@test.com",
+      "id": 2
+    },
+    {
+      "name": "sameer",
+      "age": "20",
+      "email": "abe@test.com",
+      "id": 3
+    },
+    {
+      "name": "ghouse",
+      "age": "22",
+      "email": "abc@tezt.com",
+      "id": 4
+    },
+    {
+      "name": "mohammed",
+      "age": "15",
+      "email": "rihan@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "saniya",
+      "email": "sanu@gmail.com",
+      "age": "17",
+      "id": 10
+    },
+    {
+      "name": "hina",
+      "email": "1223",
+      "age": "23",
+      "id": 11
+    },
+    {
+      "name": "hk",
+      "email": "hk@123test.com",
+      "age": "23",
+      "id": 12
+    },
+    {
+      "name": "hina",
+      "email": "123@",
+      "age": "23",
+      "id": 13
+    },
+    {
+      "name": "waseem",
+      "email": "wasu123@gmail.com",
+      "password": "123456",
+      "id": 14
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Install Json-server
+create file filename.Json
+write json fromate code
+Open terminal and run command given below
+PowerShell -ExecutionPolicy Bypass -Command "json-server --watch filename.json"
+then it will Open in the 'http://localhost:3000'
+Json server Api Intarget testing:
+ command:ipconfig 
+to check IP address
+next command:
+npx json-server --host 0.0.0.0 filename.json
+the formate will be 'http://192.168.1.6:3000/Products'
+and then change the Ipaddress in this line formate
+'http://10.0.2.2:3000/user'

@@ -9,7 +9,8 @@ switch (Action.type){
     return item.name!=Action.data
    })
    return[...result]
+ 
     default: 
     return state
 }
-}
+ }

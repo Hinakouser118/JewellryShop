@@ -20,7 +20,7 @@ export default function TabNavigation() {
         </NavigationContainer> */}
      <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen}/>
+      <Stack.Screen name="HomeScreen" component={HomeScreen}/>
       <Stack.Screen name="Userlist" component={UserList}/>
       </Stack.Navigator>
      </NavigationContainer>

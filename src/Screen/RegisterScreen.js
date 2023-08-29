@@ -27,7 +27,7 @@ const RegisterScreen = () => {
       return false;
     }
 
-    const url = 'http://10.0.2.2:3000/user';
+    const url = 'http://192.168.1.2:3000/user';
     let result = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

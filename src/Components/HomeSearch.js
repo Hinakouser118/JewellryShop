@@ -10,16 +10,27 @@ export default function HomeSearch(props) {
   const cartData = useSelector((state) => state.reducer);
   const [data, setData] = useState([]);
   const [searchText, setSearchText] = useState('');
+  const [error, setError] = useState(null); 
+
   useEffect(() => {
     setSearchText('');
     setData([]);
+    setError(null); 
     const search = async (text) => {
-      setSearchText(text);
-      const url = `http://192.168.1.6:3000/Products?q=${text}`;
-      let result = await fetch(url);
-      result = await result.json();
-      if (result) {
+      try {
+        setSearchText(text);
+        const url = `http://192.168.1.4:3000/Products?q=${text}`;
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        
+        const result = await response.json();
         setData(result);
+        setError(null); 
+      } catch (error) {
+        setError(error); 
       }
     };
     search(searchText);
@@ -39,9 +50,12 @@ export default function HomeSearch(props) {
           fontSize={20}
           onChangeText={(text) => setSearchText(text)}
         />
-        {searchText && data.length ? data.map((item) => <ProductItem key={item.id} item={item} />) : null}
-        <Pressable ml={10} style={{ position: "absolute", top: 10, right: 0 }}
->
+        {error ? (
+          <Text>Error: {error.message}</Text>
+        ) : (
+          searchText && data.length ? data.map((item) => <ProductItem key={item.id} item={item} />) : null
+        )}
+        <Pressable ml={10} style={{ position: "absolute", top: 10, right: 0 }}>
           <FontAwesome5 name="shopping-basket" size={24} color="black" />
           <Box
             px={1}

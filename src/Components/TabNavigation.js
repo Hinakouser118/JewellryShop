@@ -1,29 +1,83 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-// import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Provider } from 'react-redux';
 import store from './Redux/store';
 import HomeScreen from '../Screen/HomeScreen';
 import UserList from './UserList';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// const Tab = createMaterialTopTabNavigator();
-const Stack = createNativeStackNavigator();
+import { AntDesign } from '@expo/vector-icons';
+import { StyleSheet } from 'react-native';
+import wishlist from '../Components/wishlist';
+import Checkout from '../Payment/Checkout';
+import { FontAwesome } from '@expo/vector-icons';
+import MainScreenfile from '../Profile/MainScreenfile';
+import { Ionicons } from '@expo/vector-icons';
+const Tab = createMaterialBottomTabNavigator();
 export default function TabNavigation() {
-  
   return (
     <Provider store={store}>
-       {/* <NavigationContainer>
-          <Tab.Navigator initialRouteName="Home">
-            <Tab.Screen name="Home" component={HomeScreen}style={{padding:30}}/>
-            <Tab.Screen name="Userlist" component={UserList}  options={{ headerShown: false }}/>
-            </Tab.Navigator>
-        </NavigationContainer> */}
-     <NavigationContainer>
-      <Stack.Navigator>
-      <Stack.Screen name="HomeScreen" component={HomeScreen}/>
-      <Stack.Screen name="Userlist" component={UserList}/>
-      </Stack.Navigator>
-     </NavigationContainer>
+     <Tab.Navigator
+          initialRouteName="Home"
+          shifting={true}
+          activeColor="white"
+          barStyle={styles.tabBar}
+        >
+          <Tab.Screen
+            name="HomeScreen"
+            component={HomeScreen}
+            options={{
+              tabBarIcon: () => (
+                <AntDesign name="home" size={24} color={'white'} />
+              ),
+            }}
+          />
+        
+             <Tab.Screen
+            name="Wishlist"
+            component={wishlist}
+            options={{
+              tabBarIcon: ({ color }) => (
+           <AntDesign name="heart" size={24} color={color} />
+              ),
+            }}
+          />
+            <Tab.Screen
+            name="Userlist"
+            component={UserList}
+            options={{
+              tabBarIcon: ({ color }) => (
+                <AntDesign name="shoppingcart" size={24} color={color} />
+              ),
+            }}
+          />
+          <Tab.Screen
+            name="Checkout"
+            component={Checkout}
+            options={{
+              tabBarIcon: ({ color }) => (
+<FontAwesome name="check-square" size={24} color={color} />
+
+              ),
+            }}
+          />
+      
+           <Tab.Screen
+            name="Profile-Main"
+            component={MainScreenfile}
+            options={{
+              tabBarIcon: ({ color }) => (
+                <Ionicons name="ios-list" size={24} color={color} />
+
+              ),
+            }}
+          />
+          </Tab.Navigator>
+      
     </Provider>
   );
 }
+
+const styles = StyleSheet.create({
+  tabBar: {
+    backgroundColor: '#000000',
+  },
+});

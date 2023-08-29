@@ -1,72 +1,78 @@
 {
-    "Products": [
-      {
-        "id":1,
-        "name":"Jhumka",
-        "image":"https://tse3.mm.bing.net/th?id=OIP.GhPVWPFBYlTR9DVqQPb41gHaHa&pid=Api&P=0&h=180",
-        "desciption":"Gold jhumka",
-        "price":30000,
-        "countInStock":"50",
-        "rating":4.5,
-        "goldPurity":"22k",
-        "grams":"10gram",
-        "numReview":100
-      },{
-        "id":2,
-        "name":"Bangles",
-        "image":"https://tse1.mm.bing.net/th?id=OIP.te6Jin75kPidaThxpX80yQHaKg&pid=Api&P=0&h=180",
-        "desciption":"Gold Bangles",
-        "price":200128,
-        "countInStock":"500",
-        "rating":5,
-        "grams":"28.52gram",
-        "goldPurity":"24k",
-        "numReview":200
-      },{
-        "id":3,
-        "name":"Earrings",
-        "image":"https://tse2.mm.bing.net/th?id=OIP.Zg3RJuN6u3QF3d_STaH5AAHaHa&pid=Api&P=0&h=180",
-        "desciption":"Gold Earrings",
-        "price":29000,
-        "countInStock":"5",
-        "grams":"2.14gram",
-        "goldPurity":"14k",
-        "rating":4.5,
-        "numReview":10
-      },{
-        "id":4,
-        "name":"Ring",
-        "image":"https://tse4.mm.bing.net/th?id=OIP.ukYtN3fiJb5EX1WPp5R9IAHaHa&pid=Api&P=0&h=180",
-        "desciption":" Gold Ring",
-        "price":20000,
-        "grams":"5gram",
-        "countInStock":"10",
-        "goldPurity":"18k",
-        "rating":4.5,
-        "numReview":70
-      },{
-        "id":5,
-        "name":"Bracelet",
-        "image":"https://tse4.mm.bing.net/th?id=OIP.yWMnRNyOH5tf576b_qEXngHaE_&pid=Api&P=0&h=180",
-        "desciption":"Gold Bracelet",
-        "price":25000,
-        "grams":"7gram",
-        "countInStock":"50",
-        "rating":4,
-        "goldPurity":"24k",
-        "numReview":20
-      },{
-        "id":6,
-        "name":"Nakles",
-        "image":"https://tse4.mm.bing.net/th?id=OIP.ngX0mNaYwRmaUC9XgiiecwHaFf&pid=Api&P=0&h=180",
-        "desciption":"Gold Nakles",
-        "price":100000,
-        "countInStock":"20",
-        "rating":5,
-        "grams":"35gram",
-        "goldPurity":"22k",
-        "numReview":100
-      }
-
-    ]
-  }
+  "Products": [
+    {
+      "id": 1,
+      "name": "Jhumka",
+      "image": "https://tse3.mm.bing.net/th?id=OIP.GhPVWPFBYlTR9DVqQPb41gHaHa&pid=Api&P=0&h=180",
+      "desciption": "Gold jhumka",
+      "price": 30000,
+      "countInStock": "50",
+      "rating": 4.5,
+      "goldPurity": "22k",
+      "grams": "10gram",
+      "numReview": 100
+    },
+    {
+      "id": 2,
+      "name": "Bangles",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.te6Jin75kPidaThxpX80yQHaKg&pid=Api&P=0&h=180",
+      "desciption": "Gold Bangles",
+      "price": 200128,
+      "countInStock": "500",
+      "rating": 5,
+      "grams": "28.52gram",
+      "goldPurity": "24k",
+      "numReview": 200
+    },
+    {
+      "id": 3,
+      "name": "Earrings",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.Zg3RJuN6u3QF3d_STaH5AAHaHa&pid=Api&P=0&h=180",
+      "desciption": "Gold Earrings",
+      "price": 29000,
+      "countInStock": "5",
+      "grams": "2.14gram",
+      "goldPurity": "14k",
+      "rating": 4.5,
+      "numReview": 10
+    },
+    {
+      "id": 4,
+      "name": "Ring",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.ukYtN3fiJb5EX1WPp5R9IAHaHa&pid=Api&P=0&h=180",
+      "desciption": " Gold Ring",
+      "price": 20000,
+      "grams": "5gram",
+      "countInStock": "10",
+      "goldPurity": "18k",
+      "rating": 4.5,
+      "numReview": 70
+    },
+    {
+      "id": 5,
+      "name": "Bracelet",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.yWMnRNyOH5tf576b_qEXngHaE_&pid=Api&P=0&h=180",
+      "desciption": "Gold Bracelet",
+      "price": 25000,
+      "grams": "7gram",
+      "countInStock": "50",
+      "rating": 4,
+      "goldPurity": "24k",
+      "numReview": 20
+    },
+    {
+      "id": 6,
+      "name": "Nakles",
+      "image": "https://tse4.mm.bing.net/th?id=OIP.ngX0mNaYwRmaUC9XgiiecwHaFf&pid=Api&P=0&h=180",
+      "desciption": "Gold Nakles",
+      "price": 100000,
+      "countInStock": "20",
+      "rating": 5,
+      "grams": "35gram",
+      "goldPurity": "22k",
+      "numReview": 100
+    }
+    
+    
+  ]
+}

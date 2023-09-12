@@ -3,8 +3,6 @@ import { Box,View, Text, Image, Pressable, Button, StyleSheet, ScrollView } from
 import Colors from '../Screen/Color';
 import { remove_from_cart } from './Redux/Action';
 import { useDispatch } from 'react-redux';
-
-
 import { useNavigation } from '@react-navigation/native';
 export default function CartItems({ cartItems }) {
   const dispatch = useDispatch();

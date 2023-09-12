@@ -1,4 +1,4 @@
-import { ADD_ORDER, ADD_TO_ADDRESS, ADD_TO_WISHLIST, ADD_To_CART,DELETE_ADDRESS,DELETE_ORDER,REMOVE_FROM_CART, REMOVE_FROM_WISHLIST } from "./Constants";
+import { ADD_MONEY, ADD_ORDER, ADD_TO_ADDRESS, ADD_TO_WISHLIST, ADD_To_CART,DELETE_ADDRESS,DELETE_ORDER,REMOVE_FROM_CART, REMOVE_FROM_WISHLIST, REMOVE_MONEY } from "./Constants";
 export function addToCart (item)  {
     return {
       type:ADD_To_CART,
@@ -51,3 +51,15 @@ export function delete_Order(item) {
     data: item,
   };
 }
+export function addMoney (item)  {
+  return {
+    type:ADD_MONEY,
+    data:item,
+  };
+};
+export function removeMoney(item)  {
+  return {
+    type:REMOVE_MONEY,
+    data:item,
+  };
+};

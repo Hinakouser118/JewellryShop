@@ -11,6 +11,8 @@ import Checkout from '../Payment/Checkout';
 import { FontAwesome } from '@expo/vector-icons';
 import MainScreenfile from '../Profile/MainScreenfile';
 import { Ionicons } from '@expo/vector-icons';
+import WalletScreen from '../Screen/WalletScreen';
+import { Entypo } from '@expo/vector-icons';
 const Tab = createMaterialBottomTabNavigator();
 export default function TabNavigation() {
   return (
@@ -66,6 +68,16 @@ export default function TabNavigation() {
             options={{
               tabBarIcon: ({ color }) => (
                 <Ionicons name="ios-list" size={24} color={color} />
+
+              ),
+            }}
+          />
+           <Tab.Screen
+            name="wallet"
+            component={WalletScreen}
+            options={{
+              tabBarIcon: ({ color }) => (
+<Entypo name="wallet" size={24} color={color} />
 
               ),
             }}

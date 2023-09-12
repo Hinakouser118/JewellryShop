@@ -7,6 +7,7 @@ import store from "../Components/Redux/store";
 import { createStackNavigator } from "@react-navigation/stack";
 import Orders from "./Orders";
 import Feedback from "./FeedBack";
+import Pdf from "../Components/Pdf";
 const Stack = createStackNavigator();
 function MainScreenfile() {
   return (
@@ -17,6 +18,7 @@ function MainScreenfile() {
     <Stack.Screen name="AddAddress" component={AddAddressScreen} />
     <Stack.Screen name="Orders" component={Orders}/>
     <Stack.Screen name='Feedback' component={Feedback}/>
+    <Stack.Screen name="Pdf" component={Pdf}/>
       </Stack.Navigator>
     </Provider>
   );

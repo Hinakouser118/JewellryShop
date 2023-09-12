@@ -6,3 +6,5 @@ export const ADD_TO_ADDRESS='addAddress';
 export const DELETE_ADDRESS='deleteAddress';
 export const ADD_ORDER='addOrder';
 export const DELETE_ORDER='deleteOrder';
+export const ADD_MONEY='addMoney';
+export const REMOVE_MONEY='removeMoney';

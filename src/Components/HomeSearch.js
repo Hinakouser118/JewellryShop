@@ -37,11 +37,11 @@ export default function HomeSearch(props) {
   }, [searchText]);
 
   return (
-    <HStack space={3} w="full" px={6} bg={Colors.pink} py={4} paddingTop={1} alignItems="center" safeAreaTop>
+    <HStack space={3} w="full" px={10} bg={Colors.pink} py={4} paddingTop={1} alignItems="center" safeAreaTop>
       <View style={{ flex: 1 }}>
         <Input
           placeholder="Search"
-          w="85%"
+          w="90%"
           bg={Colors.white}
           type="search"
           h={12}

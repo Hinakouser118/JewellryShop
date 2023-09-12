@@ -38,6 +38,18 @@ export default function Orders() {
       useNativeDriver: false,
     }).start();
   };
+const calculateTotal = (orderItems) => {
+  return orderItems.reduce((total, item) => total + item.price, 0);
+};
+const generatePDFForSelectedOrder = () => {
+const selectedOrderItems = orders[selectedStep]?.item;
+  if (selectedOrderItems) {
+    navigation.navigate("Pdf", {
+      orderItems: selectedOrderItems,
+      orderTotal: calculateTotal(selectedOrderItems),
+    });
+  }
+};
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -268,10 +280,15 @@ export default function Orders() {
         }}>
                 <Text style={styles.buttonText}>NextStep</Text>
               </Pressable>
-
-              <Pressable style={styles.smallButton} onPress={()=>navigation.navigate('Feedback')}>
+      <Pressable style={styles.smallButton} onPress={()=>navigation.navigate('Feedback')}>
                 <Text style={styles.buttonText}>feedback</Text>
               </Pressable>
+              <Pressable
+            style={styles.smallButton}
+            onPress={generatePDFForSelectedOrder}
+          >
+            <Text style={styles.buttonText}>Print Bill</Text>
+          </Pressable>
             </View>
          </View>
   </SafeAreaView>
@@ -295,4 +312,3 @@ const styles=StyleSheet.create({
     color: 'white',
   },
 })
-
